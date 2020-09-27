@@ -9,7 +9,7 @@ import Routes from './src/routes';
 
 export default function App() {
   return (
-    <SafeAreaProvider>
+    <SafeAreaProvider style={{paddingTop: 24}}>
       <StatusBar style="light" backgroundColor="#000" />
       <View style={{flex: 1, backgroundColor: "#000"}}>
         <NavigationContainer>

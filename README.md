@@ -71,3 +71,11 @@ https://react-native.rocketseat.dev/
 ### `yarn add @react-navigation/stack`
 
 
+## --- Página de Login
+
+### `Criar diretório assets dentro de src`
+
+### `Importar imagem e mostrar na tela`
+
+
+
