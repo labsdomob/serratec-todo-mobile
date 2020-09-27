@@ -29,4 +29,45 @@ https://react-native.rocketseat.dev/
 ### `expo start`
 
 
+## --- Statusbar
+
+### `style -> light, dark`
+
+### `backgroundColor="#000"`
+
+
+
+## --- Safe Area Context
+
+### `expo install react-native-safe-area-context`
+
+### `Usar na app.js`
+
+
+## --- Criar diretório pages
+
+### `Criar page Login`
+
+### `yarn add styled-components`
+
+### `import styled from 'styled-components/native';`
+
+
+
+## --- Configurando navegação
+
+### `Criar diretório routes`
+
+### `React navigation - ir para o site`
+
+### `yarn add @react-navigation/native`
+
+### `expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view`
+
+### `Importar gesture handler no app.js - import 'react-native-gesture-handler';`
+
+### `Restartar servidor expo`
+
+### `yarn add @react-navigation/stack`
+
 
