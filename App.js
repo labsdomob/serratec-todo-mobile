@@ -11,7 +11,7 @@ export default function App() {
   return (
     <SafeAreaProvider style={{paddingTop: 24}}>
       <StatusBar style="light" backgroundColor="#000" />
-      <View style={{flex: 1, backgroundColor: "#000"}}>
+      <View style={{flex: 1}}>
         <NavigationContainer>
           <Routes />
         </NavigationContainer>

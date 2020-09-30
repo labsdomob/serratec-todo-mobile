@@ -77,5 +77,7 @@ https://react-native.rocketseat.dev/
 
 ### `Importar imagem e mostrar na tela`
 
+### `Finalizar componente Login`
 
 
+## --- Criar arquivo services/api

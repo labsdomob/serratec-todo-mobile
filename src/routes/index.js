@@ -13,9 +13,9 @@ const AuthRoutes = () => (
       // headerStyle: {
       //   backgroundColor: '#ccc'
       // },
-      cardStyle: {
-        backgroundColor: '#ccc'
-      }
+      // cardStyle: {
+      //   backgroundColor: '#ccc'
+      // }
     }}
   >
     <Auth.Screen name="Login" component={Login} />
