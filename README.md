@@ -92,3 +92,8 @@ https://react-native.rocketseat.dev/
 ### `yarn add @react-native-community/async-storage`
 
 
+## --- Criar Dashboard
+
+## --- Bottom tab
+
+## --- Criar Tarefa
