@@ -97,3 +97,5 @@ https://react-native.rocketseat.dev/
 ## --- Bottom tab
 
 ## --- Criar Tarefa
+
+## --- Criar SignOut

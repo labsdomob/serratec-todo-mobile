@@ -33,3 +33,19 @@ export const ResumoTextParagraphBold = styled.Text`
   color: #3A3A3A;
   font-weight: bold;
 `;
+
+export const LogoutButton = styled.TouchableOpacity`
+  width: 100px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: #c53030;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const LogoutButtonText = styled.Text`
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+`;
