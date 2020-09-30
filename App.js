@@ -5,6 +5,7 @@ import { Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 
+import AppProvider from './src/hooks';
 import Routes from './src/routes';
 
 export default function App() {
@@ -12,9 +13,11 @@ export default function App() {
     <SafeAreaProvider style={{paddingTop: 24}}>
       <StatusBar style="light" backgroundColor="#000" />
       <View style={{flex: 1}}>
-        <NavigationContainer>
-          <Routes />
-        </NavigationContainer>
+        <AppProvider>
+          <NavigationContainer>
+            <Routes />
+          </NavigationContainer>
+        </AppProvider>
       </View>
     </SafeAreaProvider>
   );

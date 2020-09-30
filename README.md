@@ -81,3 +81,14 @@ https://react-native.rocketseat.dev/
 
 
 ## --- Criar arquivo services/api
+
+### `Instalar o axios`
+
+
+## --- Criar hooks
+
+### `Usar os hooks no app.js`
+
+### `yarn add @react-native-community/async-storage`
+
+
