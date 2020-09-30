@@ -1,25 +1,29 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Login from '../pages/Login';
+import AuthRoutes from './auth.routes';
+import AppRoutes from './app.routes';
 
-const Auth = createStackNavigator();
+import { useAuth } from '../hooks/auth';
 
-const AuthRoutes = () => (
-  <Auth.Navigator 
-    screenOptions={{
-      headerShown: false,
-      // headerTintColor: '#000',
-      // headerStyle: {
-      //   backgroundColor: '#ccc'
-      // },
-      // cardStyle: {
-      //   backgroundColor: '#ccc'
-      // }
-    }}
-  >
-    <Auth.Screen name="Login" component={Login} />
-  </Auth.Navigator>
-);
+const Stack = createStackNavigator();
 
-export default AuthRoutes;
+const RootNavigator = () => {
+  const { user } = useAuth();
+
+  useEffect(() => {
+    console.log("routes user", user);
+  }, [user])
+
+  return (
+    <Stack.Navigator 
+      screenOptions={{
+        headerShown: false
+      }}
+    >
+      <Stack.Screen name="Root" component={user ? AppRoutes : AuthRoutes} />
+    </Stack.Navigator>
+  )
+};
+
+export default RootNavigator;

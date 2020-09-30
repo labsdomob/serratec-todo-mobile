@@ -3,6 +3,7 @@ import React, {
   useCallback,
   useState,
   useContext,
+  useEffect
 } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 
@@ -12,15 +13,21 @@ import api from '../services/api';
 const AuthContext = createContext({});
 
 const AuthProvider = ({ children }) => {
-  const [data, setData] = useState(async () => {
-    const user = await AsyncStorage.getItem('@TODO:user');
+  const [data, setData] = useState({});
 
-    if (user) {
-      return { user: JSON.parse(user) };
+  useEffect(() => {
+    async function loadStoragedData() {
+      const user = await AsyncStorage.getItem('@TODO:user');
+
+      console.log("AuthProvider user", user);
+
+      if (user) {
+        setData({ user: JSON.parse(user) });
+      }
     }
 
-    return {};
-  });
+    loadStoragedData();
+  }, []);
 
   const signIn = useCallback(async ({ email, password }) => {
     const response = await api.get('usuarios');
